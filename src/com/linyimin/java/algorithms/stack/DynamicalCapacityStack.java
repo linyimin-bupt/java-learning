@@ -6,12 +6,8 @@ package com.linyimin.java.algorithms.stack;
  * @Date: Created in 22:26 2018/6/21
  */
 public class DynamicalCapacityStack<T> {
-    private T[] a;
+    private T[] a = (T[]) new Object[1];
     private int N;
-    public DynamicalCapacityStack(int capacity){
-        // 数组泛型不能直接被创建,需要进行强制类型转换
-        this.a = (T[]) new Object[capacity];
-    }
 
     public int size(){
         return this.N;

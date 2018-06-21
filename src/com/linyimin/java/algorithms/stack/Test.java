@@ -35,7 +35,7 @@ public class Test {
 //        }
 //        System.out.println("size=" + stack.size());
 //    }
-        DynamicalCapacityStack<Double> stack = new DynamicalCapacityStack<>(8);
+        DynamicalCapacityStack<Double> stack = new DynamicalCapacityStack<>();
         Scanner sin = new Scanner(System.in);
         while(sin.hasNext()){
             double s = sin.nextDouble();
