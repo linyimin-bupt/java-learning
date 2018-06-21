@@ -22,11 +22,27 @@ public class Test {
 //        }
 //        System.out.println("size=" + stack.size());
 //    }
-        FixedCapacityStack<Double> stack = new FixedCapacityStack(10);
+//        FixedCapacityStack<Double> stack = new FixedCapacityStack(10);
+//        Scanner sin = new Scanner(System.in);
+//        while(sin.hasNext()){
+//            double s = sin.nextDouble();
+//            stack.push(s);
+//        }
+//        System.out.println("size=" + stack.size());
+//        int len = stack.size();
+//        for(int i = 0; i < len; i++){
+//            System.out.println(stack.pop());
+//        }
+//        System.out.println("size=" + stack.size());
+//    }
+        DynamicalCapacityStack<Double> stack = new DynamicalCapacityStack<>(8);
         Scanner sin = new Scanner(System.in);
         while(sin.hasNext()){
             double s = sin.nextDouble();
             stack.push(s);
+            if(stack.size() > 8){
+                System.out.println("增大数组大小");
+            }
         }
         System.out.println("size=" + stack.size());
         int len = stack.size();
