@@ -56,14 +56,28 @@ public class Test {
 //        System.out.println("size=" + stack.size());
 //    }
         // 测试iterator
-        DynamicCapacityStackWithIterable<Double> stack = new DynamicCapacityStackWithIterable<>();
+//        DynamicCapacityStackWithIterable<Double> stack = new DynamicCapacityStackWithIterable<>();
+//        Scanner sin = new Scanner(System.in);
+//        while(sin.hasNext()){
+//            double s = sin.nextDouble();
+//            stack.push(s);
+//            if(stack.size() > 8){
+//                System.out.println("增大数组大小");
+//            }
+//        }
+//        System.out.println("size=" + stack.size());
+//        Iterator<Double> iterator = stack.iterator();
+//        while (iterator.hasNext()){
+//            System.out.println(iterator.next());
+//        }
+//        System.out.println("size=" + stack.size());
+
+        // 测试链表实现的栈
+        LinkedListStack<Double> stack = new LinkedListStack<>();
         Scanner sin = new Scanner(System.in);
         while(sin.hasNext()){
             double s = sin.nextDouble();
             stack.push(s);
-            if(stack.size() > 8){
-                System.out.println("增大数组大小");
-            }
         }
         System.out.println("size=" + stack.size());
         Iterator<Double> iterator = stack.iterator();
@@ -71,5 +85,6 @@ public class Test {
             System.out.println(iterator.next());
         }
         System.out.println("size=" + stack.size());
+
     }
 }
