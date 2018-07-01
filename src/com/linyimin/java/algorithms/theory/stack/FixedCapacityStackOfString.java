@@ -1,4 +1,4 @@
-package com.linyimin.java.algorithms.stack;
+package com.linyimin.java.algorithms.theory.stack;
 
 public class FixedCapacityStackOfString {
     private String[] a;

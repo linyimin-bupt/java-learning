@@ -1,6 +1,4 @@
-package com.linyimin.java.algorithms.bag;
-
-import com.linyimin.java.algorithms.queue.LinkedListQueue;
+package com.linyimin.java.algorithms.theory.bag;
 
 import java.util.Iterator;
 import java.util.Scanner;

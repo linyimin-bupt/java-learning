@@ -1,4 +1,4 @@
-package com.linyimin.java.practice.chapter1.section1;
+package com.linyimin.java.algorithms.chapter1.section1;
 
 /**
  * @Author: linyimin

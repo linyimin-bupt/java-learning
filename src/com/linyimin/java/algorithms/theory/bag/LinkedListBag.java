@@ -1,4 +1,4 @@
-package com.linyimin.java.algorithms.bag;
+package com.linyimin.java.algorithms.theory.bag;
 
 import java.util.Iterator;
 

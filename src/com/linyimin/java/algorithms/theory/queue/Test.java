@@ -1,6 +1,4 @@
-package com.linyimin.java.algorithms.queue;
-
-import com.linyimin.java.algorithms.stack.LinkedListStack;
+package com.linyimin.java.algorithms.theory.queue;
 
 import java.util.Iterator;
 import java.util.Scanner;

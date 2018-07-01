@@ -1,4 +1,4 @@
-package com.linyimin.java.algorithms.queue;
+package com.linyimin.java.algorithms.theory.queue;
 
 import java.util.Iterator;
 
