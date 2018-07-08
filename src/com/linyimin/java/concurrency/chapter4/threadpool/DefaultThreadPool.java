@@ -30,12 +30,10 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job>{
     private AtomicInteger threadNum = new AtomicInteger();
 
     public DefaultThreadPool(){
-        initializeWorkers(workerNum);
     }
 
     public DefaultThreadPool(int num){
         workerNum = num > MAX_WORKER_NUMBERS ? MAX_WORKER_NUMBERS : num < MIN_WORKER_NUMBER ? MIN_WORKER_NUMBER : num;
-        initializeWorker(workerNum);
     }
     @Override
     public void execute(Job job) {
