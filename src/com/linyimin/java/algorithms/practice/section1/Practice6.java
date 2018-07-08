@@ -1,4 +1,4 @@
-package com.linyimin.java.algorithms.chapter1.section1;
+package com.linyimin.java.algorithms.practice.section1;
 
 import algs4.cs.princeton.edu.StdOut;
 

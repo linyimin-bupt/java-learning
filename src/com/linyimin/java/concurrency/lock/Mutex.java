@@ -14,6 +14,7 @@ public class Mutex implements Lock {
 
     private static class Sync extends AbstractQueuedSynchronizer {
 
+
         // 当状态为0的时候获取锁
         @Override
         protected boolean tryAcquire(int arg) {
