@@ -1,3 +1,4 @@
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
@@ -9,10 +10,13 @@ import java.util.concurrent.locks.LockSupport;
 public class Test {
     public static Thread thread;
     public static void main(String [] args) throws InterruptedException {
-       Thread park = new Thread(new Park(), "park");
-       Thread unpark = new Thread(new Unpark(), "unpark");
-       park.start();
-       unpark.start();
+//       Thread park = new Thread(new Park(), "park");
+//       Thread unpark = new Thread(new Unpark(), "unpark");
+//       park.start();
+//       unpark.start();
+        int c = 2;
+        int init = 5;
+
     }
 
     static class Park implements Runnable{
