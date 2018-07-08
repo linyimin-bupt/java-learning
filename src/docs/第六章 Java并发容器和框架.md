@@ -16,3 +16,24 @@
 
 
 
+ConcurrentHashMap包含一个segment数组，每个segment包含一个HashEntry数组，HashEntry数组的元素是一个链表结构。
+
+
+
+ConcurrentLinkedQueue：使用非阻塞方法(循环CAS的方式)实现的线程安全队列
+
+阻塞队列： 	
+
+- 支持阻塞的插入方法：当队列为满时，队列会阻塞插入元素的线程，知道队列不满
+- 支持阻塞的移除方法：当队列为空时，获取元素的线程会等待队列变为非空
+
+Java中的阻塞队列：
+
+- ArrayBlockingQueue：一个由数组结构组成的有界阻塞队列。
+- LinkedBlockingQueue:一个由链表结构组成的有界阻塞队列。
+- LinkedTransferQueue:一个由链表结构组成的无界阻塞队列。
+- LinkedBlockingDeque:一个由链表结构组成的双向阻塞队列。
+- PriorityBlockingQueue:一个支持优先级排序的无界阻塞队列。
+- DelayQueue:一个使用优先级队列实现的无界阻塞队列。
+- SynchronousQueue:一个不存储元素的阻塞队列。
+  - 每一个put操作必须等待一个take操作,否则不能继续添加元素。

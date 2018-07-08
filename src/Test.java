@@ -1,4 +1,5 @@
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
@@ -14,8 +15,7 @@ public class Test {
 //       Thread unpark = new Thread(new Unpark(), "unpark");
 //       park.start();
 //       unpark.start();
-        int c = 2;
-        int init = 5;
+        SynchronousQueue<String> queue = new SynchronousQueue<>();
 
     }
 
@@ -26,6 +26,8 @@ public class Test {
             thread = Thread.currentThread();
             LockSupport.park();
             System.out.println("阻塞结束");
+            ConcurrentHashMap<String ,String> map = new ConcurrentHashMap();
+            map.get("");
         }
     }
     
