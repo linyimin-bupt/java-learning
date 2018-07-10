@@ -7,5 +7,9 @@ package com.linyimin.java.design.pattern.proxy.dynamicproxy;
  * @Description:
  * @Date: Created in 上午9:39 18-7-10
  */
-public class RealSubject {
+public class RealSubject implements Subject {
+    @Override
+    public void buyMac() {
+        System.out.println("Buy a mac!!!");
+    }
 }
