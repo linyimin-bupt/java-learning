@@ -1,4 +1,4 @@
-package com.linyimin.java.design.pattern.proxy;
+package com.linyimin.java.design.pattern.proxy.staticproxy;
 
 /**
  * @Author: linyimin
